@@ -19,13 +19,12 @@ function InputName(props) {
  */
 
 
-class App extends React.Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {date: new Date(), name: 'Home', controlDate: new Date('2017-10-15')};
   }
-
-
+  
   componentDidMount() {
     this.timerId = setInterval(
       () => this.tick(),
